@@ -1,0 +1,133 @@
+/* ===========================
+    *ESTILOS GENERALES*
+=========================== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.Contenedor{
+    /* border: 1px solid black; */
+    max-width: 1200px;
+    width: 65%;
+    margin: 100px auto;
+}
+
+/* ===========================
+    *LOGIN*
+=========================== */
+.Formulario, .Panel{
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    /* border: 1px solid black; */
+}
+.Formulario__grupo{
+    position: relative;
+    margin: 10px 0;
+}
+.Formulario__input{
+    width: 100%;
+    font-size: 12pt;
+    padding: 10px 10px;
+    border-radius: 100px;
+    border: 1px solid lightgray;
+}
+.Formulario__input:focus{    
+    border: 1px solid rgb(65, 96, 235);
+    outline: none;
+}
+.formulario__validacion-estado{
+    position: absolute;
+    right: 10px;
+    bottom: 14px;
+    z-index: 100;
+    font-size: 18px;
+    opacity: 0;
+}
+.Formulario__btn-login{
+    width: 40%;
+    padding: 10px 28px;
+    border-radius: 100px;
+    border: none;
+    background: indigo;
+    color: white;
+}
+.Formulario__btn-login:hover{
+    background: rgb(97, 0, 165);
+}
+.Disabled{
+    background: rgb(183, 181, 184);
+    color: black;
+}
+/* ===========================
+    *MENSAJES*
+=========================== */
+.Formulario__mensaje-exito, .Formulario__mensaje-error{
+    display: none;
+}
+.Formulario__mensaje-exito, .Formulario__mensaje-error, .Formulario__mensaje-errorDB{
+    text-align: center;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+} 
+.Formulario__mensaje-exito{
+    background: rgb(3, 160, 50);
+
+}
+.Formulario__mensaje-error, .Formulario__mensaje-errorDB{
+    background: rgb(194, 1, 1);
+}
+
+.Formulario__mensaje-exito-activo{
+    display: block;
+}
+.Formulario__mensaje-error-activo{
+    display: block;
+}
+.Formulario__mensaje-errorDB-activo{
+    display: block;
+}
+/* ===========================
+    *RECOMENDACIONES*
+=========================== */
+.Panel{
+    border-left: 1px solid rgb(220, 218, 218);
+}
+.Panel__parrafo{
+    font-size: 10pt;
+    text-align: justify;
+}
+.Panel__parrafo-titulo, .Formulario__titulo{
+    font-size: 16pt;
+    font-weight: 600;
+}
+/* ===========================
+    *ESTILOS DE VALIDACIÓN*
+=========================== */
+.Formulario__grupo-correcto .formulario__validacion-estado{
+    color: rgb(7, 179, 58);
+    opacity: 1;
+    /* border: 1px solid rgb(7, 179, 58); */
+}
+.Formulario__grupo-incorrecto .formulario__validacion-estado{
+    color: rgb(212, 13, 13);
+    opacity: 1;
+}
+.Formulario__grupo-incorrecto .Formulario__input{
+    border: 1px solid rgb(212, 13, 13);
+}
+/* ===========================
+    *HELPERS*
+=========================== */
+.Shadow{box-shadow: 1px 2px 5px rgb(197, 197, 197);}
+.Redondeado{border-radius: 10px;}
+.Margin-T{margin: 10px 0 0 0;}/*Margin Top */
+.Flex{
+    display: flex;
+    justify-content: center;
+}
