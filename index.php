@@ -40,7 +40,7 @@
         chart2.draw(data2, options);
         setInterval(function() {
             var JSON=$.ajax({
-                url:"https://sensores7sb.000webhostapp.com/get-datos.php?q=1",
+                url:"https://feriariego.herokuapp.com/get-datos.php?q=1",
                 dataType: 'json',
                 async: false}).responseText;
             var Respuesta=jQuery.parseJSON(JSON);
