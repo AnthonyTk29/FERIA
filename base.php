@@ -1,9 +1,9 @@
 <?php
 
-$servername = "localhost";
-$dbname = "id18352758_cacao";
-$username = "id18352758_sensor";
-$password = "m7ZLf{Jxosdzoo*@";
+$servername = "mysql-sistemcomer.alwaysdata.net";
+$dbname = "sistemacomer_riego";
+$username = "274093_riego";
+$password = "americanCLASSIC29*";
 $api_key_value ="tPmAT5Ab3j7F9";
 
 $api_key  = $id_sector= $humedadR= $temperatura= $humedadS= "";
