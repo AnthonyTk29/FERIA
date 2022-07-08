@@ -1,6 +1,6 @@
-<?php
+﻿<?php
 header('Content-Type: application/json');
-$pdo=new PDO("mysql:dbname=id18352758_cacao;host=localhost","id18352758_sensor","m7ZLf{Jxosdzoo*@");
+$pdo=new PDO("mysql:dbname=sistemacomer_riego;host=mysql-sistemcomer.alwaysdata.net","274093_riego","americanCLASSIC29*");
 switch($_GET['q']){
 		// Buscar Último Dato
 		case 1:
